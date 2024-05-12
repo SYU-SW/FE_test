@@ -1,31 +1,36 @@
 import React from 'react';
 import './App.css';
+import starbucksImage from './assets/starbucks.png';
+import wyldgearImage from './assets/wyldgear.png'; 
+import stanleyImage from './assets/stanley.png';
+import corkcicleImage from './assets/corkcicle.png';
+import stanley2Image from './assets/stanley2.png';
 
 const products = [
   {
     id: 1,
     name: 'This season\'s latest',
-    image: 'starbucks.png',
+    image: starbucksImage,
   },
   {
     id: 2,
     name: 'Wyld Gear',
-    image: 'wyldgear.png'
+    image: wyldgearImage,
   },
   {
     id: 3,
     name: 'Stanley',
-    image: 'stanley.png',
+    image: stanleyImage,
   },
   {
     id: 4,
     name: 'Corkcicle',
-    image: 'corkcicle.png',
+    image: corkcicleImage,
   },
   {
     id: 5,
     name: 'Stanley',
-    image: 'stanley2.png',
+    image: stanley2Image,
   },
 ];
 
@@ -35,7 +40,7 @@ const App = () => {
       <div className="product-container">
         {products.map((product) => (
           <div key={product.id} className="product">
-            <img src={`/assets/${product.image}`} alt={product.name} className="product-image" />
+            <img src={product.image} alt={product.name} className="product-image" />
             <div className="product-name">{product.name}</div>
           </div>
         ))}
