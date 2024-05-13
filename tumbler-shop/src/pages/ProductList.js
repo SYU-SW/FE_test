@@ -12,14 +12,14 @@ const ProductList = () => {
 
   const fetchProducts = async () => {
     // 초기 제품 데이터 불러오기
-    const data = await fetchFromAPI('/products');
-    setProducts(data);
+   // const data = await fetchFromAPI('/products');
+    //setProducts(data);
   };
 
   const fetchMoreProducts = async () => {
     // 추가 제품 데이터 불러오기
-    const data = await fetchFromAPI('/products?page=2');
-    setProducts((prevProducts) => [...prevProducts, ...data]);
+    //const data = await fetchFromAPI('/products?page=2');
+    //setProducts((prevProducts) => [...prevProducts, ...data]);
     setIsFetching(false);
   };
 

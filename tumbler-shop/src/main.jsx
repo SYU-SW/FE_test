@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import starbucksImage from './assets/starbucks.png';
-import wyldgearImage from './assets/wyldgear.png'; 
+import wyldgearImage from './assets/wyldgear.png';
 import stanleyImage from './assets/stanley.png';
 import corkcicleImage from './assets/corkcicle.png';
 import stanley2Image from './assets/stanley2.png';
