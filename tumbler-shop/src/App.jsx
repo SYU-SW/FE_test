@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useInfiniteScroll from './hooks/useInfiniteScroll';
-import Banner from './components/Banner';
-import ProductGrid from './components/ProductGrid';
+import Banner from './pages/Banner';
+import ProductGrid from './pages/ProductGrid';
 import './App.css';
 
 function App() {
